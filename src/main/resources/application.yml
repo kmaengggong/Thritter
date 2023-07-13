@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: ${url}
+    username: ${usrname}
+    password: ${password}
+    driver-class-name: ${driver-class-name}
+  profiles:
+    active: db
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+server:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
